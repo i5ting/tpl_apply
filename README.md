@@ -1,5 +1,8 @@
 # tpl_apply
 
+tpl_apply with handlebars
+
+[![npm version](https://badge.fury.io/js/tpl_apply.svg)](http://badge.fury.io/js/tpl_apply)
 
 ## Install
 
@@ -9,7 +12,6 @@
 
 	npm test
 	
-
 ## Usage
 
 方式1 ：basic

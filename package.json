@@ -1,11 +1,12 @@
 {
   "name": "tpl_apply",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean && node test.js",
-		"clean":"rm -rf test/**/*"
+		"start" : "npm publish .",
+    "test"  : "npm run clean && node test.js",
+		"clean" : "rm -rf test/**/*"
   },
   "repository": {
     "type": "git",
