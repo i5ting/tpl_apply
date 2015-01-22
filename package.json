@@ -1,0 +1,25 @@
+{
+  "name": "tpl_apply",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run clean && node test.js",
+		"clean":"rm -rf test/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i5ting/tpl_apply.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i5ting/tpl_apply/issues"
+  },
+  "homepage": "https://github.com/i5ting/tpl_apply",
+  "dependencies": {
+    "bufferhelper": "^0.2.0",
+    "handlebars": "^2.0.0",
+    "object-assign": "^1.0.0"
+  }
+}
