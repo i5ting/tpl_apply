@@ -1,16 +1,14 @@
 var tpl = require('./index');
 
-
+// way 1
 var source = process.cwd() + '/tpl.js'
 var dest = process.cwd() + '/test/tpl.generate.js'
 
-
-tpl.tpl_apply(source,{
+tpl.tpl_apply(source, { 
 	title: "My New Post", body: "This is my first post!"
 },dest);
 
-// 2
-
+// way 2
 source = process.cwd() + '/tpl2.js'
 dest = process.cwd() + '/test/tpl2.generate.js'
 
@@ -27,10 +25,10 @@ Handlebars.registerHelper('list', function(items, options) {
 });
 
 
-tpl.tpl_apply_with_register_helper(Handlebars,source,{
+tpl.tpl_apply_with_register_helper(Handlebars, source, {
   people: [
    {firstName: "Yehuda", lastName: "Katz"},
    {firstName: "Carl", lastName: "Lerche"},
    {firstName: "Alan", lastName: "Johnson"}
  ]
-},dest);
+}, dest);
