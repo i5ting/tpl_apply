@@ -6,7 +6,7 @@ tpl_apply with handlebars
 
 ## Install
 
-	npm install --save tpl_apply.
+	npm install --save tpl_apply
 	
 ## Test
 
