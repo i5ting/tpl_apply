@@ -19,7 +19,7 @@ function tpl_apply(template_path, data_obj, dest_file_path) {
  * Custom with helpers
  */ 
 function tpl_apply_with_register_helper(Handlebars, template_path, data_obj, dest_file_path) {
-	var rs = fs.createReadStream(template_path, {encoding: 'utf-8', bufferSize: 11}); 
+	var rs = fs.createReadStream(template_path, {bufferSize: 11}); 
 	var bufferHelper = new BufferHelper();
 
 	rs.on("data", function (trunk){
@@ -27,7 +27,7 @@ function tpl_apply_with_register_helper(Handlebars, template_path, data_obj, des
 	});
 
 	rs.on("end", function () {
-		var source = bufferHelper.toBuffer().toString();
+		var source = bufferHelper.toBuffer().toString('utf8');
 		var template = Handlebars.compile(source);
 	
 		log(template);
