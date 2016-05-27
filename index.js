@@ -3,9 +3,10 @@ var fs = require('fs');
 var BufferHelper = require('bufferhelper');
 var Handlebars = require('handlebars');
 
-function log(t){
-	console.dir('[TPL_APPLY LOG] ' + t);
-}
+require('log1')(true)
+// function log(t){
+//   console.dir('[TPL_APPLY LOG] ' + t);
+// }
 
 /**
  * Basic
@@ -30,7 +31,7 @@ function tpl_apply_with_register_helper(Handlebars, template_path, data_obj, des
 		var source = bufferHelper.toBuffer().toString('utf8');
 		var template = Handlebars.compile(source);
 	
-		log(template);
+    // log(template);
 		
 		var content = template(data_obj);
 

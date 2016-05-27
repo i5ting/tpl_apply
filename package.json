@@ -1,12 +1,12 @@
 {
   "name": "tpl_apply",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
-		"start" : "npm publish .",
-    "test"  : "npm run clean && node test.js",
-		"clean" : "rm -rf test/**/*"
+    "start": "npm publish .",
+    "test": "npm run clean && node test.js",
+    "clean": "rm -rf test/**/*"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "bufferhelper": "^0.2.0",
     "handlebars": "^2.0.0",
     "object-assign": "^1.0.0"
+  },
+  "devDependencies": {
+    "log1": "^1.0.7"
   }
 }
