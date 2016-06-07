@@ -21,9 +21,10 @@
   "dependencies": {
     "bufferhelper": "^0.2.0",
     "handlebars": "^2.0.0",
-    "object-assign": "^1.0.0"
+    "object-assign": "^1.0.0",
+    "log1": "^1.0.7"
   },
   "devDependencies": {
-    "log1": "^1.0.7"
+    
   }
 }
