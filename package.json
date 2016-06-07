@@ -1,6 +1,6 @@
 {
   "name": "tpl_apply",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,5 @@
     "object-assign": "^1.0.0",
     "log1": "^1.0.7"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
